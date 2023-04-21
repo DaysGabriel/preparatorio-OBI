@@ -1,0 +1,28 @@
+--------------------------------------------------
+Algorítmo : Torneio de tênis
+Entrada : resultado do jogo //de uma única partida
+Saída : grupo em que o jogador foi classificado
+--------------------------------------------------
+
+lista_resultados[6]
+resultado_jogo = ''
+
+//peço os resultados dos jogos
+para cada elemento de (lista_resultados), faça :
+    resultado_jogo <- input
+    lista_resultados <- resultado_jogo
+
+contador = 0
+
+para cada elemento de (lista_resultados), faça :
+    se (lista_resultados[i] == 'V'), então :
+        contador = contador + 1
+     
+se o contador for maior ou igual a 5, então :   
+    imprima 1
+se o contador for 3 ou 4, então, então :
+    imprima 2
+se o contador for 1 ou 2, então :
+    imprima 3
+ se não 
+    imprima -1
